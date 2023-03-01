@@ -3,28 +3,25 @@ body {
     background-color: #2c2c2c;
     font-family: "Inter", sans-serif;
     margin: 0 0 0 0;
-    height: 1000px;
+    height: 10000px;
+    color: #fffff1;
 }
 /* End body */
-/* Scroll Style */
-*::-webkit-scrollbar-track
-{
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-	border-radius: 10px;
+/* Scrollbar */
+html::-webkit-scrollbar {
+    width: 12px;
 }
-
-*::-webkit-scrollbar
-{
-	width: 12px;
+html::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(29, 29, 29, 0.637);
 }
-
-*::-webkit-scrollbar-thumb
-{
-	border-radius: 10px;
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-	background-color: #555;
+html::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: #19191953;
 }
-/* End Scroll Style */
+html::-webkit-scrollbar-thumb:hover {
+    background-color: #363636;
+}
+/* End Scrollbar */
 /* NavBar */
 #navbarHome {
     margin-top: 20px;
@@ -77,4 +74,34 @@ body {
 #navBarUlRight a {
     padding: 36px 1rem 0 0;
 }
+.navbarHome ul:hover {
+    border-color:#fffff1 solid;
+}
 /* End NavBar */
+#backgroundHomeImg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+    /*clip: rect(0px,auto,50vw,0px);*/
+}
+#downArrowHome {
+    position:absolute;
+    display: block;
+    top: 90%;
+    left: 50%;
+    right: 50%;
+    font-size: 3rem;
+    width: 32px;
+    height: auto;
+    animation-name: downArrowAnim;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes downArrowAnim {
+    0%   {top: 90%;}
+    50%  {top: 85%;}
+    100% {top: 90%;}
+  }
