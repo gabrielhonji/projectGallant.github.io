@@ -184,4 +184,14 @@ html::-webkit-scrollbar-thumb:hover {
     padding: 22px 49% 22px 49%;
     rotate: 180deg;
 }
+#footerGallantInfo {
+    width: 25%;
+    float: left;
+    text-align: center;
+}
+#footerGallantLogo {
+    margin: 52px 5% 0 5%;
+    width: 50%;
+    height: auto;
+}
 /* Footer Div */
