@@ -1,6 +1,6 @@
 /* body */
 body {
-    background-color: #2c2c2c;
+    background-color: #434343;
     font-family: "Inter", sans-serif;
     margin: 0 0 0 0;
     height: 10000px;
@@ -16,15 +16,15 @@ html::-webkit-scrollbar-track {
 }
 html::-webkit-scrollbar-thumb {
     border-radius: 8px;
-    background-color: #19191953;
+    background-color: #363636;
 }
 html::-webkit-scrollbar-thumb:hover {
-    background-color: #363636;
+    background-color: #91919153;
 }
 /* End Scrollbar */
 /* NavBar */
 #navbarHome {
-    margin-top: 20px;
+    margin-top: 1.5rem;
 }
 #navDiv1 {
     float: left;
@@ -80,12 +80,11 @@ html::-webkit-scrollbar-thumb:hover {
 /* End NavBar */
 #backgroundHomeImg {
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: 0;
     width: 100%;
     height: auto;
     z-index: -1;
-    /*clip: rect(0px,auto,50vw,0px);*/
 }
 #downArrowHome {
     position:absolute;
@@ -97,11 +96,36 @@ html::-webkit-scrollbar-thumb:hover {
     width: 32px;
     height: auto;
     animation-name: downArrowAnim;
-    animation-duration: 3s;
+    animation-duration: 1.5s;
     animation-iteration-count: infinite;
 }
 @keyframes downArrowAnim {
     0%   {top: 90%;}
-    50%  {top: 85%;}
+    50%  {top: 88%;}
     100% {top: 90%;}
   }
+.gradientDiv1 {
+    background: rgb(67,67,67);
+    background: linear-gradient(360deg, rgb(67, 67, 67) 0%, rgba(0,212,255,0) 70%);
+    width: 100%;
+    height: 100px;
+    bottom: 0;
+    position: absolute;
+    z-index: -1;
+}
+.gradientDiv2 {
+    background: rgb(67,67,67);
+    background: linear-gradient( rgba(67, 67, 67, 0.795) 0%, rgba(0,212,255,0) 60%);
+    width: 100%;
+    height: 100px;
+    top: 0;
+    position: absolute;
+    z-index: -1;
+}
+#contentDivHome {
+    width: 70%;
+    height: 100px;
+    top: 115%;
+    margin: 0 15% 0 15%;
+    position: absolute;
+}
