@@ -128,7 +128,7 @@ body {
 .contentText {
     -webkit-background-clip: text;
 	background-clip: text;
-	background-image: url('/assets/img/backgroundHomeDarker.png');
+	background-image: url('/n/assets/img/backgroundHomeDarker.png');
 	color: transparent;
     font-weight: 900;
     font-size: 24pt;
@@ -137,7 +137,7 @@ body {
 .contentSubText {
     -webkit-background-clip: text;
 	background-clip: text;
-	background-image: url('assets/img/backgroundHomeDarker.png');
+	background-image: url('/n/assets/img/backgroundHomeDarker.png');
     color: transparent;
     font-weight: 400;
     font-size: 12pt;
